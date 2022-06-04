@@ -1,12 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./source/img/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halloween Website</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./source/img/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halloween Website</title>
+</head>
+
+<body>
+  <!-- = header = -->
+  <header class="header" id="header">
+    <nav class="nav contenedor">
+      <a href="#" class="nav__logo">
+        <img src="./source/img/logo.webp" alt="logo" class="nav__logo-img">
+        Halloween
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#candy" class="nav__link">Candy</a>
+          </li>
+          <li class="nav__item">
+            <a href="#new" class="nav__link">New</a>
+          </li>
+
+          <a href="#" class="button button--ghost">Support</a>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <box-icon name='x' color='#ffffff'></box-icon>
+        </div>
+
+        <img src="./source/img/nav-img.webp" alt="araña" class="nav__img">
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <box-icon name='grid-alt' color='#ffffff'></box-icon>
+      </div>
+    </nav>
+  </header>
+  <!-- =/header = -->
+
+  <!-- = main = -->
+  <main class="main">
+
+    <!-- = Home = -->
+    <section class="home contenedor" id="home">
+
+      <div class="swiper home-swiper">
+
+        <div class="swiper-wrapper">
+
+          <section class="swiper-slide">
+            <div class="home__content grid">
+
+              <div class="home__group">
+                <img src="./source/img/home1-img.webp" alt="home" class="home__img">
+                <div class="home__indicator"></div>
+                <div class="home__details-img">
+                  <h4 class="home__details-title">
+                    The Labu "Reiza"
+                  </h4>
+                  <spna class="home__details-subtitle">
+                    The Living Pumpkin
+                  </spna>
+                </div>
+              </div>
+
+              <div class="home__data">
+                <h3 class="home__subtitle">
+                  #1 Top Scariest Ghost
+                </h3>
+                <h1 class="home__title">
+                  UOOOO <br> TRICK OR <br> TREAT!!
+                </h1>
+                <p class="home__description">
+                  Hi, I'm Reiza, people call me "El Labu". I am currently trying to lear something new, building my own
+                  bike with parts made only in Malaysia
+                </p>
+
+                <div class="home__buttons">
+                  <a href="#" class="button">Book Now</a>
+                  <a href="#" class="button--link button--flex">
+                    Track Record
+                    <box-icon name='right-arrow-alt' color='#ffffff' class="button__icon"></box-icon>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="swiper-slide">
+            <div class="home__content grid">
+
+              <div class="home__group">
+                <img src="./source/img/home2-img.webp" alt="home" class="home__img">
+                <div class="home__indicator"></div>
+                <div class="home__details-img">
+                  <h4 class="home__details-title">
+                    Adino & Grahami
+                  </h4>
+                  <spna class="home__details-subtitle">
+                    No words can describe them
+                  </spna>
+                </div>
+              </div>
+
+              <div class="home__data">
+                <h3 class="home__subtitle">
+                  #2 Top Best Duo
+                </h3>
+                <h1 class="home__title">
+                  BRINK BACK <br> MY COTTON <br> CANDY
+                </h1>
+                <p class="home__description">
+                  Andino steals cotton candy from his brother and eats them all in one bite, a hungry beast. Grahami can no longer contain his anger towards Adino.
+                </p>
+
+                <div class="home__buttons">
+                  <a href="#" class="button">Book Now</a>
+                  <a href="#" class="button--link button--flex">
+                    Track Record
+                    <box-icon name='right-arrow-alt' color='#ffffff' class="button__icon"></box-icon>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="swiper-slide">
+            <div class="home__content grid">
+
+              <div class="home__group">
+                <img src="./source/img/home3-img.webp" alt="home" class="home__img">
+                <div class="home__indicator"></div>
+                <div class="home__details-img">
+                  <h4 class="home__details-title">
+                    Capitain Sem
+                  </h4>
+                  <spna class="home__details-subtitle">
+                    Veteran Spooky Ghost
+                  </spna>
+                </div>
+              </div>
+
+              <div class="home__data">
+                <h3 class="home__subtitle">
+                  #3 Top Scariest Ghost
+                </h3>
+                <h1 class="home__title">
+                  RESPAWN <br> THE SPOOKY <br> SKULL
+                </h1>
+                <p class="home__description">
+                  In search for cute little puppy, Captain Sem has come back from his tragic death. With his howarts certified power he promise to be a hero for all of ghostking
+                </p>
+
+                <div class="home__buttons">
+                  <a href="#" class="button">Book Now</a>
+                  <a href="#" class="button--link button--flex">
+                    Track Record
+                    <box-icon name='right-arrow-alt' color='#ffffff' class="button__icon"></box-icon>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+      </div>
+
+    </section>
+    <!-- =/Home = -->
+
+    <!-- = Category = -->
+    <section class="section category">
+      <h2 class="section__title">
+        Favorite Scare <br> Category
+      </h2>
+
+      <div class="category__container contenedor grid">
+        <div class="category__data">
+          <img src="./source/img/category1-img.webp" alt="category" class="category__img">
+          <h3 class="category__title">Ghosts</h3>
+          <p class="category__description">
+            Choose the ghosts, the scariest there are.
+          </p>
+        </div>
+
+        <div class="category__data">
+          <img src="./source/img/category2-img.webp" alt="category" class="category__img">
+          <h3 class="category__title">Pumpkins</h3>
+          <p class="category__description">
+            You look at the scariest pumpkins there is.
+          </p>
+        </div>
+
+        <div class="category__data">
+          <img src="./source/img/category3-img.webp" alt="category" class="category__img">
+          <h3 class="category__title">Witch Hat</h3>
+          <p class="category__description">
+            Pick the most stylish witch hats out there.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- =/Category = -->
+
+    <!-- = About = -->
+    <section class="section about" id="about">
+      <div class="about__container contenedor grid">
+
+        <div class="about__data">
+          <h2 class="section__title about__title">
+            About Halloween <br> Night
+          </h2>
+          <p class="about__description">
+            Night of all the saints, or all the dead, is celebrates on October 31 and it is a very fun international celebration, this celebration comes from ancient origins, and is already celebrated by everyone.
+          </p>
+          <a href="#" class="button">Know more</a>
+        </div>
+
+        <img src="./source/img/about-img.webp" alt="about" class="about__img">
+      </div>
+    </section>
+    <!-- =/About = -->
+
+    <!-- = Trick or Treat = -->
+    <section class="section trick" id="trick">
+      <h2 class="section__title">
+        Trick Or Treat
+      </h2>
+
+      <div class="trick__container contenedor grid">
+        <div class="trick__content">
+          <img src="./source/img/trick-treat1-img.webp" alt="trick" class="trick__img">
+          <h3 class="trick__title">
+            Toffee
+          </h3>
+          <span class="trick__subtitle">
+            Candy
+          </span>
+          <span class="trick__price">
+            $11.99
+          </span>
+
+          <button class="button trick__button">
+            <box-icon name='cart-alt' color='#ffffff' class="trick__icon" ></box-icon>
+          </button>
+        </div>
+
+        <div class="trick__content">
+          <img src="./source/img/trick-treat2-img.webp" alt="trick" class="trick__img">
+          <h3 class="trick__title">
+            Bone
+          </h3>
+          <span class="trick__subtitle">
+            Accessory
+          </span>
+          <span class="trick__price">
+            $8.99
+          </span>
+
+          <button class="button trick__button">
+            <box-icon name='cart-alt' color='#ffffff' class="trick__icon" ></box-icon>
+          </button>
+        </div>
+
+        <div class="trick__content">
+          <img src="./source/img/trick-treat3-img.webp" alt="trick" class="trick__img">
+          <h3 class="trick__title">
+            Scarecrow
+          </h3>
+          <span class="trick__subtitle">
+            Accessory
+          </span>
+          <span class="trick__price">
+            $15.99
+          </span>
+
+          <button class="button trick__button">
+            <box-icon name='cart-alt' color='#ffffff' class="trick__icon" ></box-icon>
+          </button>
+        </div>
+
+        <div class="trick__content">
+          <img src="./source/img/trick-treat4-img.webp" alt="trick" class="trick__img">
+          <h3 class="trick__title">
+            Candy Cane
+          </h3>
+          <span class="trick__subtitle">
+            Candy
+          </span>
+          <span class="trick__price">
+            $7.99
+          </span>
+
+          <button class="button trick__button">
+            <box-icon name='cart-alt' color='#ffffff' class="trick__icon" ></box-icon>
+          </button>
+        </div>
+
+        <div class="trick__content">
+          <img src="./source/img/trick-treat5-img.webp" alt="trick" class="trick__img">
+          <h3 class="trick__title">
+            Pumpkin
+          </h3>
+          <span class="trick__subtitle">
+            Accessory
+          </span>
+          <span class="trick__price">
+            $19.99
+          </span>
+
+          <button class="button trick__button">
+            <box-icon name='cart-alt' color='#ffffff' class="trick__icon" ></box-icon>
+          </button>
+        </div>
+
+        <div class="trick__content">
+          <img src="./source/img/trick-treat6-img.webp" alt="trick" class="trick__img">
+          <h3 class="trick__title">
+            Ghost
+          </h3>
+          <span class="trick__subtitle">
+            Accessory
+          </span>
+          <span class="trick__price">
+            $17.99
+          </span>
+
+          <button class="button trick__button">
+            <box-icon name='cart-alt' color='#ffffff' class="trick__icon" ></box-icon>
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <!-- =/Trick or Treat = -->
+
+  </main>
+  <!-- =/main = -->
 
 
 
@@ -18,9 +365,7 @@
 
 
 
+  <script type="module" src="main.js"></script>
+</body>
 
-
-
-    <script type="module" src="/main.js"></script>
-  </body>
 </html>
