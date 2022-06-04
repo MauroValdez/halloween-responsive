@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
   menu();
   homeSwiper();
   scrollHeader();
+  newSwiper();
+
 })
 
 function menu() {
@@ -39,7 +41,7 @@ function menu() {
 
 function homeSwiper() {
 
-  const swiper = new Swiper('.home-swiper', {
+  const swiperHome = new Swiper('.home-swiper', {
     spaceBetween:30,
     loop: 'true',
     speed: 1000,
@@ -61,4 +63,18 @@ function scrollHeader() {
       header.classList.remove('scroll-header');
     }
   })
+}
+
+function newSwiper() {
+  const swiperNew = new Swiper('.new-swiper', {
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    freeMode: true,
+    loop: 'true',
+    speed: 2000,
+    autoplay: {
+      delay: 5000,
+    },
+  });
 }

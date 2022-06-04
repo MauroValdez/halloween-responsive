@@ -402,9 +402,95 @@ button {
   right: 0;
 }
 
+/** =------= Discount =------= **/
+.discount__container {
+  background: var(--container-color);
+  border-radius: 1.6rem;
+  padding: 4rem 0 2.4rem;
+  row-gap: 3rem;
+}
+.discount__data {
+  text-align: center;
+}
+.discount__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+  line-height: 1.4;
+}
+.discount__img {
+  width: 30rem;
+  justify-self: center;
+}
 
+/** =------= New arrivals =------= **/
+.new__container {
+  padding-top: 1.6rem;
+}
+.new__img {
+  width: 12rem;
+  margin-bottom: var(--mb-0-5);
+  transition: .3s;
+  padding: 2rem 0 .5rem 0;
+}
+.new__content {
+  position: relative;
+  background: var(--container-color);
+  width: 24rem;
+  padding: 3.2rem 0 2.4rem 0;
+  border-radius: 1.2rem;
+  text-align: center;
+  overflow: hidden;
+}
+.new__tag {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  padding: .4rem .8rem;
+  border-radius: .4rem;
+}
+.new__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-5);
+}
+.new__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+.new__prices {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .8rem;
+}
+.new__price {
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+.new__discount {
+  color: var(--first-color);
+  font-size: var(--smaller-font-size);
+  text-decoration: line-through;
+  font-weight: var(--font-medium);
+}
+.new__button {
+  display: inline-flex;
+  padding: .8rem;
+  border-radius: .4rem .4rem 1.2rem .4rem;
+  position: absolute;
+  right: -5rem;
+  bottom: 0;
+}
+.new__icon {
+  font-size: 2rem;
+}
 
-
-
-
-
+.new__content:hover .new__img {
+  transform: translateY(-.8rem);
+}
+.new__content:hover .new__button {
+  right: 0;
+}
