@@ -9,14 +9,15 @@ const navToggle = document.querySelector('#nav-toggle');
 const navClose = document.querySelector('#nav-close');
 const navLink = document.querySelectorAll('.nav__link');
 const header = document.querySelector('#header');
+const secciones = document.querySelectorAll('section[id]');
 
-
+window.addEventListener('scroll', scrollActivo);
 document.addEventListener('DOMContentLoaded', () => {
   menu();
   homeSwiper();
   scrollHeader();
   newSwiper();
-
+  scrollUp();
 })
 
 function menu() {
@@ -76,5 +77,50 @@ function newSwiper() {
     autoplay: {
       delay: 5000,
     },
+    breakpoints: {
+      768: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+      },
+      996: {
+        spaceBetween: 40,
+        slidesPerView: 3,
+      }
+    },
   });
+}
+
+function scrollActivo() {
+  const scrollY = window.pageYOffset;
+
+  secciones.forEach((section) => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 50;
+    const sectionId = section.getAttribute("id");
+    
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(`.nav__menu a[href="#${sectionId}"]`)
+        .classList
+        .add('active-link');
+    } else {
+      document
+        .querySelector(`.nav__menu a[href="#${sectionId}"]`)
+        .classList
+        .remove('active-link');
+    }
+  });
+}
+
+function scrollUp() {
+  window.addEventListener('scroll', () => {
+    const scrollUp = document.querySelector('#scroll-up');
+    if(window.scrollY >= 400){
+      scrollUp.classList.add('show-scroll');
+    } else {
+      scrollUp.classList.remove('show-scroll');
+    }
+  })
+  
 }
