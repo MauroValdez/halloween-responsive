@@ -857,3 +857,18 @@ button {
     margin-top: 9.6rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .home__img {
+    height: 42rem;
+  }
+  .swiper-pagination {
+    margin-top: var(--mb-2-5);
+  }
+  .footer__img-one {
+    top: 2rem;
+  }
+  .footer__img-two {
+    left: 20%;
+  }
+}

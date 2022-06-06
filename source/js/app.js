@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   scrollHeader();
   newSwiper();
   scrollUp();
+  revelarScroll();
 })
 
 function menu() {
@@ -85,6 +86,10 @@ function newSwiper() {
       996: {
         spaceBetween: 40,
         slidesPerView: 3,
+      },
+      1200: {
+        spaceBetween: 30,
+        slidesPerView: 4,
       }
     },
   });
@@ -123,4 +128,21 @@ function scrollUp() {
     }
   })
   
+}
+
+function revelarScroll() {
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 300,
+  })
+
+  sr.reveal('.home-swiper, .new-swiper, .newsletter__container')
+  sr.reveal('.category__data, .trick__content, .footer__content', {interval: 100})
+  sr.reveal('.about__data, .discount__img, .footer__img-two', {origin: 'left'})
+  sr.reveal('.about__img, .discount__data, .footer__img-one', {origin: 'right'})
+
+
+
 }
